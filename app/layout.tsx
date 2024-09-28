@@ -1,3 +1,4 @@
+'use-client'
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <h1>hello test</h1>
         {children}
       </body>
     </html>

@@ -23,7 +23,7 @@ function InstallPrompt() {
       <button>Add to Home Screen</button>
       {isIOS && (
         <p>
-          To install this app on your iOS device, tap the share button
+          To install this app on your iOS device, tap the share button!
           <span role="img" aria-label="share icon">
             {' '}
             ⎋{' '}

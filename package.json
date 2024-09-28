@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "android": "npx cap run android",
+    "ios": "npx cap run ios",
+    "sync": "npx cap sync",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@capacitor-community/safe-area": "^6.0.0-alpha.7",
     "@capacitor/android": "^6.1.2",
     "@capacitor/core": "^6.1.2",
     "@capacitor/ios": "^6.1.2",

@@ -1,17 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). The project also is integrated with [Capacitor](https://capacitorjs.com/). 
 
-## Getting Started
+## Getting Started On Web
 
-First, run the development server:
+First, install dependencies: 
 
-```bash
+```
+npm install
+```
+
+Next, run the development server:
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -19,6 +19,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Getting Started On iOS or Android
+
+First, build your Next.js app:
+
+```
+npm run build
+```
+
+All the client side files will be sent to the ./out/ directory. These files need to be copied to the native iOS and Android projects, and this is where Capacitor comes in:
+
+```
+npm run sync 
+```
+npm run ios
+npm run android
+```
+
+Finally, use the following run commands to run the app on each platform:
+```
 
 ## Learn More
 
