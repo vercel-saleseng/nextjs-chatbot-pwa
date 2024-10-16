@@ -33,11 +33,11 @@ All the client side files will be sent to the ./out/ directory. These files need
 ```
 npm run sync 
 ```
-npm run ios
-npm run android
-```
 
 Finally, use the following run commands to run the app on each platform:
+```
+npm run ios
+npm run android
 ```
 
 ## Learn More
